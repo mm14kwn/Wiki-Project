@@ -8,7 +8,9 @@ SOEE5680M Wiki Project</title>
 <script type="text/x-mathjax-config"> MathJax.Hub.Config({ extensions: ["tex2jax.js"], jax: ["input/TeX", "output/HTML-CSS"], tex2jax: { inlineMath: [ ['$','$'], ["\\(","\\)"] ], displayMath: [ ['$$','$$'], ["\\[","\\]"] ], processEscapes: true }, "HTML-CSS": { availableFonts: ["TeX"] } }); </script> <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"> </script><style type="text/css"> .MathJax_MathML {text-indent: 0;} </style></head><body 
 >
    <div class="maketitle">
+                                                                  
 
+                                                                  
 
 <h2 class="titleHead">Air-Sea Interactions<br />
 SOEE5680M Wiki Project</h2>
@@ -18,98 +20,281 @@ class="cmr-12">Kieran Newman</span>
 class="cmr-12">200901399</span></div><br />
 <div class="date" ><span 
 class="cmr-9">April 22, 2015</span></div>
+                                                                  
 
+                                                                  
    </div>
+                                                                  
 
+                                                                  
    <div class="tableofcontents">
    <span class="chapterToc" >1 <a 
-href="#x1-20001" id="QQ2-1-2">Definitions</a></span>
+href="#x1-20001" id="QQ2-1-2">Introduction and Definitions</a></span>
 <br />   <span class="chapterToc" >2 <a 
-href="#x1-30002" id="QQ2-1-3">Momentum Transfer</a></span>
+href="#x1-50002" id="QQ2-1-5">Momentum Transfer</a></span>
 <br />   <span class="chapterToc" >3 <a 
-href="#x1-110003" id="QQ2-1-11">Heat Transfer</a></span>
+href="#x1-130003" id="QQ2-1-13">Heat Transfer</a></span>
 <br />   <span class="chapterToc" >4 <a 
-href="#x1-180004" id="QQ2-1-18">Mass Transfer</a></span>
+href="#x1-220004" id="QQ2-1-22">Mass Transfer</a></span>
 <br />   <span class="chapterToc" >5 <a 
-href="#x1-220005" id="QQ2-1-22">References</a></span>
+href="#x1-270005" id="QQ2-1-27">References</a></span>
    </div>
    <h2 class="likechapterHead"><a 
  id="x1-1000"></a>Contents</h2> <div class="tableofcontents">
    <span class="chapterToc" >1 <a 
-href="#x1-20001">Definitions</a></span>
+href="#x1-20001">Introduction and Definitions</a></span>
+<br />   &#x00A0;<span class="sectionToc" >1.1 <a 
+href="#x1-40001.1" id="QQ2-1-4">Definitions</a></span>
 <br />   <span class="chapterToc" >2 <a 
-href="#x1-30002">Momentum Transfer</a></span>
+href="#x1-50002">Momentum Transfer</a></span>
 <br />   &#x00A0;<span class="sectionToc" >2.1 <a 
-href="#x1-40002.1" id="QQ2-1-4">Surface Layers</a></span>
+href="#x1-60002.1" id="QQ2-1-6">Surface Layers</a></span>
 <br />   &#x00A0;<span class="sectionToc" >2.2 <a 
-href="#x1-60002.2" id="QQ2-1-6">Charnock&#8217;s Relation</a></span>
+href="#x1-80002.2" id="QQ2-1-8">Charnock&#8217;s Relation</a></span>
 <br />   &#x00A0;<span class="sectionToc" >2.3 <a 
-href="#x1-70002.3" id="QQ2-1-7">Surface Roughness</a></span>
+href="#x1-90002.3" id="QQ2-1-9">Surface Roughness</a></span>
 <br />   &#x00A0;<span class="sectionToc" >2.4 <a 
-href="#x1-80002.4" id="QQ2-1-8">Dissipation</a></span>
+href="#x1-100002.4" id="QQ2-1-10">Dissipation</a></span>
 <br />   &#x00A0;<span class="sectionToc" >2.5 <a 
-href="#x1-90002.5" id="QQ2-1-9">Wind Waves</a></span>
+href="#x1-110002.5" id="QQ2-1-11">Wind Waves</a></span>
 <br />   &#x00A0;<span class="sectionToc" >2.6 <a 
-href="#x1-100002.6" id="QQ2-1-10">Wave Breaking</a></span>
+href="#x1-120002.6" id="QQ2-1-12">Wave Breaking</a></span>
 <br />   <span class="chapterToc" >3 <a 
-href="#x1-110003">Heat Transfer</a></span>
+href="#x1-130003">Heat Transfer</a></span>
 <br />   &#x00A0;<span class="sectionToc" >3.1 <a 
-href="#x1-120003.1" id="QQ2-1-12">Sensible and Latent Heat Fluxes</a></span>
+href="#x1-140003.1" id="QQ2-1-14">Sensible and Latent Heat Fluxes</a></span>
 <br />   &#x00A0;<span class="sectionToc" >3.2 <a 
-href="#x1-130003.2" id="QQ2-1-13">Diffusion</a></span>
+href="#x1-160003.2" id="QQ2-1-16">Diffusion</a></span>
 <br />   &#x00A0;<span class="sectionToc" >3.3 <a 
-href="#x1-140003.3" id="QQ2-1-14">Hot Towers</a></span>
+href="#x1-170003.3" id="QQ2-1-17">Hot Towers</a></span>
 <br />   &#x00A0;<span class="sectionToc" >3.4 <a 
-href="#x1-150003.4" id="QQ2-1-15">Convection</a></span>
+href="#x1-190003.4" id="QQ2-1-19">Convection</a></span>
 <br />   &#x00A0;<span class="sectionToc" >3.5 <a 
-href="#x1-160003.5" id="QQ2-1-16">Ocean Circulation</a></span>
+href="#x1-200003.5" id="QQ2-1-20">Ocean Circulation</a></span>
 <br />   &#x00A0;<span class="sectionToc" >3.6 <a 
-href="#x1-170003.6" id="QQ2-1-17">CAPE</a></span>
+href="#x1-210003.6" id="QQ2-1-21">CAPE</a></span>
 <br />   <span class="chapterToc" >4 <a 
-href="#x1-180004">Mass Transfer</a></span>
+href="#x1-220004">Mass Transfer</a></span>
 <br />   &#x00A0;<span class="sectionToc" >4.1 <a 
-href="#x1-190004.1" id="QQ2-1-19">Gas Transfer</a></span>
+href="#x1-230004.1" id="QQ2-1-23">Gas Transfer</a></span>
 <br />   &#x00A0;<span class="sectionToc" >4.2 <a 
-href="#x1-200004.2" id="QQ2-1-20">Turbulence</a></span>
+href="#x1-240004.2" id="QQ2-1-24">Aerosols</a></span>
 <br />   &#x00A0;<span class="sectionToc" >4.3 <a 
-href="#x1-210004.3" id="QQ2-1-21">Wave Breaking</a></span>
+href="#x1-250004.3" id="QQ2-1-25">Turbulence</a></span>
+<br />   &#x00A0;<span class="sectionToc" >4.4 <a 
+href="#x1-260004.4" id="QQ2-1-26">Wave Breaking</a></span>
 <br />   <span class="chapterToc" >5 <a 
-href="#x1-220005">References</a></span>
+href="#x1-270005">References</a></span>
    </div>
+                                                                  
 
+                                                                  
    <h2 class="chapterHead"><span class="titlemark">Chapter&#x00A0;1</span><br /><a 
- id="x1-20001"></a>Definitions</h2>
+ id="x1-20001"></a>Introduction and Definitions</h2>
    <div class="chapterTOCS">
+   &#x00A0;<span class="sectionToc" >1.1 <a 
+href="#x1-40001.1">Definitions</a></span>
    </div>
-<!--l. 36--><p class="indent" >   Suspendisse vitae elit. Aliquam arcu neque, ornare in, ullamcorper quis, commodo
-eu, libero. Fusce sagittis erat at erat tristique mollis. Maecenas sapien libero, molestie
-et, lobortis in, sodales eget, dui. Morbi ultrices rutrum lorem. Nam elementum
-ullamcorper leo. Morbi dui. Aliquam sagittis. Nunc placerat. Pellentesque tristique
-sodales est. Maecenas imperdiet lacinia velit. Cras non urna. Morbi eros
-pede, suscipit ac, varius vel, egestas non, eros. Praesent malesuada, diam id
-pretium elementum, eros sem dictum tortor, vel consectetuer odio sem sed
-wisi.
-<!--l. 38--><p class="indent" >   (<a 
-href="#Xbenjamin67">Benjamin</a>,&#x00A0;<a 
-href="#Xbenjamin67">1967</a>)
+   <h4 class="subsectionHead"><span class="titlemark">1.0.1   </span> <a 
+ id="x1-30001.0.1"></a>Introduction</h4>
+<!--l. 54--><p class="noindent" >Air-Sea interactions on various scales have important impacts on various atmospheric
+and oceanic processes, such as <a 
+href="#x1-180003.3.1">hurricanes</a>, <a 
+href="#x1-200003.5">ocean circulation</a>, large scale atmospheric
+motions and monsoon cycles. There are three main quantities transferred between
+atmosphere and ocean, namely <a 
+href="#x1-50002">momentum</a>, <a 
+href="#x1-130003">heat</a> and <a 
+href="#x1-220004">mass</a>. The laws governing
+these transfers are generally implicit relationships between the flux of a
+quantity, the related forces in the flow, and various properties of the system.
+This implicit relationship is represented in <a 
+href="#Xcsanady04">Csanady</a>&#x00A0;(<a 
+href="#Xcsanady04">2004</a>) by the equation
+<!--tex4ht:inline--><table class="equation"><tr><td>
+<!--l. 58--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="block" class="equation">
+                    <mstyle 
+   id="x1-3001r1"  class="label" ></mstyle><!--endlabel--><mi 
+>f</mi> <mfenced separators="" 
+open="("  close=")" ><mrow><mstyle 
+class="mbox"><mtext  >Flux</mtext></mstyle><mo 
+class="MathClass-punc">,</mo><mstyle 
+class="mbox"><mtext  >Force</mtext></mstyle><mo 
+class="MathClass-punc">,</mo><munderover accentunder="false" accent="false"><mrow  
+><mo mathsize="big" 
+>&#x2211;</mo>
+  </mrow><mrow 
+><mi 
+>i</mi><mo 
+class="MathClass-rel">=</mo><mn>1</mn></mrow><mrow 
+><mi 
+>n</mi></mrow></munderover 
+><msub><mrow 
+><mi 
+>X</mi></mrow><mrow 
+>
+<mi 
+>i</mi></mrow></msub 
+></mrow></mfenced> <mo 
+class="MathClass-rel">=</mo> <mn>0</mn><mo 
+class="MathClass-punc">,</mo>
+</math></td><td class="eq-no">(1.1)</td></tr></table>
+<!--l. 61--><p class="nopar" >
+for <!--l. 62--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mi 
+>n</mi></math>
+variables <!--l. 62--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><msub><mrow 
+><mi 
+>X</mi></mrow><mrow 
+><mi 
+>i</mi></mrow></msub 
+></math>
+that influence the transfer. This <a 
+href="#x1-3001r1">relationship</a> can be reworked with knowledge of the
+<a 
+href="#x1-40001.1">Buckingham <!--l. 63--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mi 
+>&#x03C0;</mi></math>
+Theorem</a> to give <!--tex4ht:inline--><table class="equation"><tr><td>
+<!--l. 64--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="block" class="equation">
+                         <mstyle 
+   id="x1-3002r2"  class="label" ></mstyle><!--endlabel--><mi 
+>f</mi> <mfenced separators="" 
+open="("  close=")" ><mrow><munderover accentunder="false" accent="false"><mrow  
+><mo mathsize="big" 
+>&#x2211;</mo>
+  </mrow><mrow 
+><mi 
+>i</mi><mo 
+class="MathClass-rel">=</mo><mn>1</mn></mrow><mrow 
+><mi 
+>m</mi></mrow></munderover 
+><msub><mrow 
+><mi 
+>N</mi></mrow><mrow 
+>
+<mi 
+>i</mi></mrow></msub 
+></mrow></mfenced> <mo 
+class="MathClass-rel">=</mo> <mn>0</mn><mo 
+class="MathClass-punc">,</mo>
+</math></td><td class="eq-no">(1.2)</td></tr></table>
+                                                                  
 
+                                                                  
+<!--l. 67--><p class="nopar" >
+for <!--l. 68--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mi 
+>m</mi></math>
+nondimensional combinations of the force, flux and variables. If the flux or force appears
+in one <!--l. 69--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><msub><mrow 
+><mi 
+>N</mi></mrow><mrow 
+><mi 
+>i</mi></mrow></msub 
+></math>
+only, then this relationship can be used by setting this as the response variable, with
+all others set as explanatory variables. Variations on <a 
+href="#x1-3002r2">this equation</a> will be
+used in later sections to describe the mechanics of various local and <a 
+href="#x1-40001.1">bulk</a>
+transfers.
+   <h3 class="sectionHead"><span class="titlemark">1.1   </span> <a 
+ id="x1-40001.1"></a>Definitions</h3>
+   <div class="sectionTOCS">
+   </div>
+     <dl class="description"><dt class="description">
+<span 
+class="cmbx-10">Buckingham </span><!--l. 74--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mi 
+>&#x03C0;</mi></math> <span 
+class="cmbx-10">Theorem</span> </dt><dd 
+class="description">
+     First proved by <a 
+href="#Xbertrand78">Bertrand</a> in <a 
+href="#Xbertrand78">1878</a>, and expanded on by <a 
+href="#Xrayleigh92">Rayleigh</a>&#x00A0;(<a 
+href="#Xrayleigh92">1892</a>)
+     and <a 
+href="#Xbuckingham14">Buckingham</a>&#x00A0;(<a 
+href="#Xbuckingham14">1914</a>), this theorem states that if some physical process
+     is described by <!--l. 74--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mi 
+>n</mi></math>
+     variables, of which <!--l. 74--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mi 
+>k</mi></math>
+     are repeating (generally linear dimensions, density and velocity in fluid
+     dynamics), then there exists <!--l. 74--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mi 
+>n</mi> <mo 
+class="MathClass-bin">-</mo> <mi 
+>k</mi></math>
+     non-dimensional, independent parameters that can be used to describe the
+     process, in some combination.
+     </dd><dt class="description">
+<span 
+class="cmbx-10">Laminar Flow</span> </dt><dd 
+class="description">If  a  fluid  flows  purely  in  parallel  layers,  with  no  mixing
+     between, then it is known as laminar flow (<a 
+href="#Xbatchelor00">Batchelor</a>,&#x00A0;<a 
+href="#Xbatchelor00">2000</a>).
+     </dd><dt class="description">
+<span 
+class="cmbx-10">Turbulent Flow</span> </dt><dd 
+class="description">The  opposite  of  <a 
+href="#x1-40001.1">laminar  flow</a>,  turbulent  flow  typically  is
+     chaotic,  with  rapid  pressure  and  velocity  changes  in  time  and  space
+     (<a 
+href="#Xbatchelor00">Batchelor</a>,&#x00A0;<a 
+href="#Xbatchelor00">2000</a>).
+     </dd><dt class="description">
+<span 
+class="cmbx-10">Bulk Transfer</span> </dt><dd 
+class="description">Generally   in   air-sea   interactions,   there   is   transfer   of
+     momentum/heat/etc  both  from  air  to  sea  and  from  sea  to  air.  The
+     inclusion of <span 
+class="cmbx-10">??</span> further complicates the use of local descriptions of this
+     transfer. To this end, we generally formulate laws in terms of the difference
+     in a quantity across the boundary layer, and the flux across the air/sea
+     interface (<a 
+href="#Xcsanady04">Csanady</a>,&#x00A0;<a 
+href="#Xcsanady04">2004</a>). </dd></dl>
+                                                                  
+
+                                                                  
    <h2 class="chapterHead"><span class="titlemark">Chapter&#x00A0;2</span><br /><a 
- id="x1-30002"></a>Momentum Transfer</h2>
+ id="x1-50002"></a>Momentum Transfer</h2>
    <div class="chapterTOCS">
    &#x00A0;<span class="sectionToc" >2.1 <a 
-href="#x1-40002.1">Surface Layers</a></span>
+href="#x1-60002.1">Surface Layers</a></span>
 <br />   &#x00A0;<span class="sectionToc" >2.2 <a 
-href="#x1-60002.2">Charnock&#8217;s Relation</a></span>
+href="#x1-80002.2">Charnock&#8217;s Relation</a></span>
 <br />   &#x00A0;<span class="sectionToc" >2.3 <a 
-href="#x1-70002.3">Surface Roughness</a></span>
+href="#x1-90002.3">Surface Roughness</a></span>
 <br />   &#x00A0;<span class="sectionToc" >2.4 <a 
-href="#x1-80002.4">Dissipation</a></span>
+href="#x1-100002.4">Dissipation</a></span>
 <br />   &#x00A0;<span class="sectionToc" >2.5 <a 
-href="#x1-90002.5">Wind Waves</a></span>
+href="#x1-110002.5">Wind Waves</a></span>
 <br />   &#x00A0;<span class="sectionToc" >2.6 <a 
-href="#x1-100002.6">Wave Breaking</a></span>
+href="#x1-120002.6">Wave Breaking</a></span>
    </div>
-<!--l. 54--><p class="indent" >   Suspendisse vitae elit. Aliquam arcu neque, ornare in, ullamcorper quis, commodo
+<!--l. 82--><p class="indent" >   Suspendisse vitae elit. Aliquam arcu neque, ornare in, ullamcorper quis, commodo
 eu, libero. Fusce sagittis erat at erat tristique mollis. Maecenas sapien libero, molestie
 et, lobortis in, sodales eget, dui. Morbi ultrices rutrum lorem. Nam elementum
 ullamcorper leo. Morbi dui. Aliquam sagittis. Nunc placerat. Pellentesque tristique
@@ -118,12 +303,12 @@ pede, suscipit ac, varius vel, egestas non, eros. Praesent malesuada, diam id
 pretium elementum, eros sem dictum tortor, vel consectetuer odio sem sed
 wisi.
    <h3 class="sectionHead"><span class="titlemark">2.1   </span> <a 
- id="x1-40002.1"></a>Surface Layers</h3>
+ id="x1-60002.1"></a>Surface Layers</h3>
    <div class="sectionTOCS">
    &#x00A0;&#x00A0;<span class="subsectionToc" >2.1.1 <a 
-href="#x1-50002.1.1" id="QQ2-1-5">Turbulence</a></span>
+href="#x1-70002.1.1" id="QQ2-1-7">Turbulence</a></span>
    </div>
-<!--l. 57--><p class="indent" >   Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Ut purus elit,
+<!--l. 86--><p class="indent" >   Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Ut purus elit,
 vestibulum ut, placerat ac, adipiscing vitae, felis. Curabitur dictum gravida mauris.
 Nam arcu libero, nonummy eget, consectetuer id, vulputate a, magna. Donec vehicula
 augue eu neque. Pellentesque habitant morbi tristique senectus et netus et malesuada
@@ -135,7 +320,7 @@ Morbi dolor nulla, malesuada eu, pulvinar at, mollis ac, nulla. Curabitur
 auctor semper nulla. Donec varius orci eget risus. Duis nibh mi, congue eu,
 accumsan eleifend, sagittis quis, diam. Duis eget orci sit amet orci dignissim
 rutrum.
-<!--l. 57--><p class="indent" >   Nam dui ligula, fringilla a, euismod sodales, sollicitudin vel, wisi. Morbi auctor
+<!--l. 86--><p class="indent" >   Nam dui ligula, fringilla a, euismod sodales, sollicitudin vel, wisi. Morbi auctor
 lorem non justo. Nam lacus libero, pretium at, lobortis vitae, ultricies et,
 tellus. Donec aliquet, tortor sed accumsan bibendum, erat ligula aliquet
 magna, vitae ornare odio metus a mi. Morbi ac orci et nisl hendrerit mollis.
@@ -143,268 +328,16 @@ Suspendisse ut massa. Cras nec ante. Pellentesque a nulla. Cum sociis natoque
 penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aliquam
 tincidunt urna. Nulla ullamcorper vestibulum turpis. Pellentesque cursus luctus
 mauris.
+                                                                  
 
-<!--l. 59--><p class="noindent" >
+                                                                  
+<!--l. 88--><p class="noindent" >
    <h4 class="subsectionHead"><span class="titlemark">2.1.1   </span> <a 
- id="x1-50002.1.1"></a>Turbulence</h4>
-<!--l. 60--><p class="noindent" >Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Ut purus elit, vestibulum
+ id="x1-70002.1.1"></a>Turbulence</h4>
+<!--l. 90--><p class="noindent" >Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Ut purus elit, vestibulum
 ut, placerat ac, adipiscing vitae, felis. Curabitur dictum gravida mauris. Nam arcu
 libero, nonummy eget, consectetuer id, vulputate a, magna. Donec vehicula augue eu
 neque. Pellentesque habitant morbi tristique senectus et netus et malesuada
-fames ac turpis egestas. Mauris ut leo. Cras viverra metus rhoncus sem.
-Nulla et lectus vestibulum urna fringilla ultrices. Phasellus eu tellus sit amet
-tortor gravida placerat. Integer sapien est, iaculis in, pretium quis, viverra
-ac, nunc. Praesent eget sem vel leo ultrices bibendum. Aenean faucibus.
-Morbi dolor nulla, malesuada eu, pulvinar at, mollis ac, nulla. Curabitur
-auctor semper nulla. Donec varius orci eget risus. Duis nibh mi, congue eu,
-accumsan eleifend, sagittis quis, diam. Duis eget orci sit amet orci dignissim
-rutrum.
-<!--l. 60--><p class="indent" >   Nam dui ligula, fringilla a, euismod sodales, sollicitudin vel, wisi. Morbi auctor
-lorem non justo. Nam lacus libero, pretium at, lobortis vitae, ultricies et,
-tellus. Donec aliquet, tortor sed accumsan bibendum, erat ligula aliquet
-magna, vitae ornare odio metus a mi. Morbi ac orci et nisl hendrerit mollis.
-Suspendisse ut massa. Cras nec ante. Pellentesque a nulla. Cum sociis natoque
-penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aliquam
-tincidunt urna. Nulla ullamcorper vestibulum turpis. Pellentesque cursus luctus
-mauris.
-<!--l. 62--><p class="noindent" >
-   <h3 class="sectionHead"><span class="titlemark">2.2   </span> <a 
- id="x1-60002.2"></a>Charnock&#8217;s Relation</h3>
-   <div class="sectionTOCS">
-   </div>
-<!--l. 63--><p class="indent" >   Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Ut purus elit,
-vestibulum ut, placerat ac, adipiscing vitae, felis. Curabitur dictum gravida mauris.
-Nam arcu libero, nonummy eget, consectetuer id, vulputate a, magna. Donec vehicula
-augue eu neque. Pellentesque habitant morbi tristique senectus et netus et malesuada
-fames ac turpis egestas. Mauris ut leo. Cras viverra metus rhoncus sem.
-Nulla et lectus vestibulum urna fringilla ultrices. Phasellus eu tellus sit amet
-tortor gravida placerat. Integer sapien est, iaculis in, pretium quis, viverra
-ac, nunc. Praesent eget sem vel leo ultrices bibendum. Aenean faucibus.
-Morbi dolor nulla, malesuada eu, pulvinar at, mollis ac, nulla. Curabitur
-auctor semper nulla. Donec varius orci eget risus. Duis nibh mi, congue eu,
-accumsan eleifend, sagittis quis, diam. Duis eget orci sit amet orci dignissim
-rutrum.
-<!--l. 63--><p class="indent" >   Nam dui ligula, fringilla a, euismod sodales, sollicitudin vel, wisi. Morbi auctor
-lorem non justo. Nam lacus libero, pretium at, lobortis vitae, ultricies et,
-tellus. Donec aliquet, tortor sed accumsan bibendum, erat ligula aliquet
-magna, vitae ornare odio metus a mi. Morbi ac orci et nisl hendrerit mollis.
-Suspendisse ut massa. Cras nec ante. Pellentesque a nulla. Cum sociis natoque
-
-penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aliquam
-tincidunt urna. Nulla ullamcorper vestibulum turpis. Pellentesque cursus luctus
-mauris.
-<!--l. 65--><p class="noindent" >
-   <h3 class="sectionHead"><span class="titlemark">2.3   </span> <a 
- id="x1-70002.3"></a>Surface Roughness</h3>
-   <div class="sectionTOCS">
-   </div>
-<!--l. 66--><p class="indent" >   Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Ut purus elit,
-vestibulum ut, placerat ac, adipiscing vitae, felis. Curabitur dictum gravida mauris.
-Nam arcu libero, nonummy eget, consectetuer id, vulputate a, magna. Donec vehicula
-augue eu neque. Pellentesque habitant morbi tristique senectus et netus et malesuada
-fames ac turpis egestas. Mauris ut leo. Cras viverra metus rhoncus sem.
-Nulla et lectus vestibulum urna fringilla ultrices. Phasellus eu tellus sit amet
-tortor gravida placerat. Integer sapien est, iaculis in, pretium quis, viverra
-ac, nunc. Praesent eget sem vel leo ultrices bibendum. Aenean faucibus.
-Morbi dolor nulla, malesuada eu, pulvinar at, mollis ac, nulla. Curabitur
-auctor semper nulla. Donec varius orci eget risus. Duis nibh mi, congue eu,
-accumsan eleifend, sagittis quis, diam. Duis eget orci sit amet orci dignissim
-rutrum.
-<!--l. 66--><p class="indent" >   Nam dui ligula, fringilla a, euismod sodales, sollicitudin vel, wisi. Morbi auctor
-lorem non justo. Nam lacus libero, pretium at, lobortis vitae, ultricies et,
-tellus. Donec aliquet, tortor sed accumsan bibendum, erat ligula aliquet
-magna, vitae ornare odio metus a mi. Morbi ac orci et nisl hendrerit mollis.
-Suspendisse ut massa. Cras nec ante. Pellentesque a nulla. Cum sociis natoque
-penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aliquam
-tincidunt urna. Nulla ullamcorper vestibulum turpis. Pellentesque cursus luctus
-mauris.
-<!--l. 68--><p class="noindent" >
-   <h3 class="sectionHead"><span class="titlemark">2.4   </span> <a 
- id="x1-80002.4"></a>Dissipation</h3>
-   <div class="sectionTOCS">
-   </div>
-<!--l. 69--><p class="indent" >   Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Ut purus elit,
-vestibulum ut, placerat ac, adipiscing vitae, felis. Curabitur dictum gravida mauris.
-Nam arcu libero, nonummy eget, consectetuer id, vulputate a, magna. Donec vehicula
-augue eu neque. Pellentesque habitant morbi tristique senectus et netus et malesuada
-fames ac turpis egestas. Mauris ut leo. Cras viverra metus rhoncus sem.
-Nulla et lectus vestibulum urna fringilla ultrices. Phasellus eu tellus sit amet
-tortor gravida placerat. Integer sapien est, iaculis in, pretium quis, viverra
-ac, nunc. Praesent eget sem vel leo ultrices bibendum. Aenean faucibus.
-Morbi dolor nulla, malesuada eu, pulvinar at, mollis ac, nulla. Curabitur
-
-auctor semper nulla. Donec varius orci eget risus. Duis nibh mi, congue eu,
-accumsan eleifend, sagittis quis, diam. Duis eget orci sit amet orci dignissim
-rutrum.
-<!--l. 69--><p class="indent" >   Nam dui ligula, fringilla a, euismod sodales, sollicitudin vel, wisi. Morbi auctor
-lorem non justo. Nam lacus libero, pretium at, lobortis vitae, ultricies et,
-tellus. Donec aliquet, tortor sed accumsan bibendum, erat ligula aliquet
-magna, vitae ornare odio metus a mi. Morbi ac orci et nisl hendrerit mollis.
-Suspendisse ut massa. Cras nec ante. Pellentesque a nulla. Cum sociis natoque
-penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aliquam
-tincidunt urna. Nulla ullamcorper vestibulum turpis. Pellentesque cursus luctus
-mauris.
-<!--l. 71--><p class="noindent" >
-   <h3 class="sectionHead"><span class="titlemark">2.5   </span> <a 
- id="x1-90002.5"></a>Wind Waves</h3>
-   <div class="sectionTOCS">
-   </div>
-<!--l. 72--><p class="indent" >   Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Ut purus elit,
-vestibulum ut, placerat ac, adipiscing vitae, felis. Curabitur dictum gravida mauris.
-Nam arcu libero, nonummy eget, consectetuer id, vulputate a, magna. Donec vehicula
-augue eu neque. Pellentesque habitant morbi tristique senectus et netus et malesuada
-fames ac turpis egestas. Mauris ut leo. Cras viverra metus rhoncus sem.
-Nulla et lectus vestibulum urna fringilla ultrices. Phasellus eu tellus sit amet
-tortor gravida placerat. Integer sapien est, iaculis in, pretium quis, viverra
-ac, nunc. Praesent eget sem vel leo ultrices bibendum. Aenean faucibus.
-Morbi dolor nulla, malesuada eu, pulvinar at, mollis ac, nulla. Curabitur
-auctor semper nulla. Donec varius orci eget risus. Duis nibh mi, congue eu,
-accumsan eleifend, sagittis quis, diam. Duis eget orci sit amet orci dignissim
-rutrum.
-<!--l. 72--><p class="indent" >   Nam dui ligula, fringilla a, euismod sodales, sollicitudin vel, wisi. Morbi auctor
-lorem non justo. Nam lacus libero, pretium at, lobortis vitae, ultricies et,
-tellus. Donec aliquet, tortor sed accumsan bibendum, erat ligula aliquet
-magna, vitae ornare odio metus a mi. Morbi ac orci et nisl hendrerit mollis.
-Suspendisse ut massa. Cras nec ante. Pellentesque a nulla. Cum sociis natoque
-penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aliquam
-tincidunt urna. Nulla ullamcorper vestibulum turpis. Pellentesque cursus luctus
-mauris.
-<!--l. 74--><p class="noindent" >
-   <h3 class="sectionHead"><span class="titlemark">2.6   </span> <a 
- id="x1-100002.6"></a>Wave Breaking</h3>
-   <div class="sectionTOCS">
-   </div>
-<!--l. 75--><p class="indent" >   Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Ut purus elit,
-
-vestibulum ut, placerat ac, adipiscing vitae, felis. Curabitur dictum gravida mauris.
-Nam arcu libero, nonummy eget, consectetuer id, vulputate a, magna. Donec vehicula
-augue eu neque. Pellentesque habitant morbi tristique senectus et netus et malesuada
-fames ac turpis egestas. Mauris ut leo. Cras viverra metus rhoncus sem.
-Nulla et lectus vestibulum urna fringilla ultrices. Phasellus eu tellus sit amet
-tortor gravida placerat. Integer sapien est, iaculis in, pretium quis, viverra
-ac, nunc. Praesent eget sem vel leo ultrices bibendum. Aenean faucibus.
-Morbi dolor nulla, malesuada eu, pulvinar at, mollis ac, nulla. Curabitur
-auctor semper nulla. Donec varius orci eget risus. Duis nibh mi, congue eu,
-accumsan eleifend, sagittis quis, diam. Duis eget orci sit amet orci dignissim
-rutrum.
-<!--l. 75--><p class="indent" >   Nam dui ligula, fringilla a, euismod sodales, sollicitudin vel, wisi. Morbi auctor
-lorem non justo. Nam lacus libero, pretium at, lobortis vitae, ultricies et,
-tellus. Donec aliquet, tortor sed accumsan bibendum, erat ligula aliquet
-magna, vitae ornare odio metus a mi. Morbi ac orci et nisl hendrerit mollis.
-Suspendisse ut massa. Cras nec ante. Pellentesque a nulla. Cum sociis natoque
-penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aliquam
-tincidunt urna. Nulla ullamcorper vestibulum turpis. Pellentesque cursus luctus
-mauris.
-
-   <h2 class="chapterHead"><span class="titlemark">Chapter&#x00A0;3</span><br /><a 
- id="x1-110003"></a>Heat Transfer</h2>
-   <div class="chapterTOCS">
-   &#x00A0;<span class="sectionToc" >3.1 <a 
-href="#x1-120003.1">Sensible and Latent Heat Fluxes</a></span>
-<br />   &#x00A0;<span class="sectionToc" >3.2 <a 
-href="#x1-130003.2">Diffusion</a></span>
-<br />   &#x00A0;<span class="sectionToc" >3.3 <a 
-href="#x1-140003.3">Hot Towers</a></span>
-<br />   &#x00A0;<span class="sectionToc" >3.4 <a 
-href="#x1-150003.4">Convection</a></span>
-<br />   &#x00A0;<span class="sectionToc" >3.5 <a 
-href="#x1-160003.5">Ocean Circulation</a></span>
-<br />   &#x00A0;<span class="sectionToc" >3.6 <a 
-href="#x1-170003.6">CAPE</a></span>
-   </div>
-<!--l. 78--><p class="indent" >   Suspendisse vitae elit. Aliquam arcu neque, ornare in, ullamcorper quis, commodo
-eu, libero. Fusce sagittis erat at erat tristique mollis. Maecenas sapien libero, molestie
-et, lobortis in, sodales eget, dui. Morbi ultrices rutrum lorem. Nam elementum
-ullamcorper leo. Morbi dui. Aliquam sagittis. Nunc placerat. Pellentesque tristique
-sodales est. Maecenas imperdiet lacinia velit. Cras non urna. Morbi eros
-pede, suscipit ac, varius vel, egestas non, eros. Praesent malesuada, diam id
-pretium elementum, eros sem dictum tortor, vel consectetuer odio sem sed
-wisi.
-   <h3 class="sectionHead"><span class="titlemark">3.1   </span> <a 
- id="x1-120003.1"></a>Sensible and Latent Heat Fluxes</h3>
-   <div class="sectionTOCS">
-   </div>
-<!--l. 81--><p class="indent" >   Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Ut purus elit,
-vestibulum ut, placerat ac, adipiscing vitae, felis. Curabitur dictum gravida mauris.
-Nam arcu libero, nonummy eget, consectetuer id, vulputate a, magna. Donec vehicula
-augue eu neque. Pellentesque habitant morbi tristique senectus et netus et malesuada
-fames ac turpis egestas. Mauris ut leo. Cras viverra metus rhoncus sem.
-Nulla et lectus vestibulum urna fringilla ultrices. Phasellus eu tellus sit amet
-tortor gravida placerat. Integer sapien est, iaculis in, pretium quis, viverra
-ac, nunc. Praesent eget sem vel leo ultrices bibendum. Aenean faucibus.
-Morbi dolor nulla, malesuada eu, pulvinar at, mollis ac, nulla. Curabitur
-auctor semper nulla. Donec varius orci eget risus. Duis nibh mi, congue eu,
-accumsan eleifend, sagittis quis, diam. Duis eget orci sit amet orci dignissim
-rutrum.
-<!--l. 81--><p class="indent" >   Nam dui ligula, fringilla a, euismod sodales, sollicitudin vel, wisi. Morbi auctor
-lorem non justo. Nam lacus libero, pretium at, lobortis vitae, ultricies et,
-tellus. Donec aliquet, tortor sed accumsan bibendum, erat ligula aliquet
-magna, vitae ornare odio metus a mi. Morbi ac orci et nisl hendrerit mollis.
-Suspendisse ut massa. Cras nec ante. Pellentesque a nulla. Cum sociis natoque
-penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aliquam
-tincidunt urna. Nulla ullamcorper vestibulum turpis. Pellentesque cursus luctus
-mauris.
-
-<!--l. 83--><p class="noindent" >
-   <h3 class="sectionHead"><span class="titlemark">3.2   </span> <a 
- id="x1-130003.2"></a>Diffusion</h3>
-   <div class="sectionTOCS">
-   </div>
-<!--l. 84--><p class="indent" >   Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Ut purus elit,
-vestibulum ut, placerat ac, adipiscing vitae, felis. Curabitur dictum gravida mauris.
-Nam arcu libero, nonummy eget, consectetuer id, vulputate a, magna. Donec vehicula
-augue eu neque. Pellentesque habitant morbi tristique senectus et netus et malesuada
-fames ac turpis egestas. Mauris ut leo. Cras viverra metus rhoncus sem.
-Nulla et lectus vestibulum urna fringilla ultrices. Phasellus eu tellus sit amet
-tortor gravida placerat. Integer sapien est, iaculis in, pretium quis, viverra
-ac, nunc. Praesent eget sem vel leo ultrices bibendum. Aenean faucibus.
-Morbi dolor nulla, malesuada eu, pulvinar at, mollis ac, nulla. Curabitur
-auctor semper nulla. Donec varius orci eget risus. Duis nibh mi, congue eu,
-accumsan eleifend, sagittis quis, diam. Duis eget orci sit amet orci dignissim
-rutrum.
-<!--l. 84--><p class="indent" >   Nam dui ligula, fringilla a, euismod sodales, sollicitudin vel, wisi. Morbi auctor
-lorem non justo. Nam lacus libero, pretium at, lobortis vitae, ultricies et,
-tellus. Donec aliquet, tortor sed accumsan bibendum, erat ligula aliquet
-magna, vitae ornare odio metus a mi. Morbi ac orci et nisl hendrerit mollis.
-Suspendisse ut massa. Cras nec ante. Pellentesque a nulla. Cum sociis natoque
-penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aliquam
-tincidunt urna. Nulla ullamcorper vestibulum turpis. Pellentesque cursus luctus
-mauris.
-<!--l. 86--><p class="noindent" >
-   <h3 class="sectionHead"><span class="titlemark">3.3   </span> <a 
- id="x1-140003.3"></a>Hot Towers</h3>
-   <div class="sectionTOCS">
-   </div>
-<!--l. 87--><p class="indent" >   Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Ut purus elit,
-vestibulum ut, placerat ac, adipiscing vitae, felis. Curabitur dictum gravida mauris.
-Nam arcu libero, nonummy eget, consectetuer id, vulputate a, magna. Donec vehicula
-augue eu neque. Pellentesque habitant morbi tristique senectus et netus et malesuada
-fames ac turpis egestas. Mauris ut leo. Cras viverra metus rhoncus sem.
-Nulla et lectus vestibulum urna fringilla ultrices. Phasellus eu tellus sit amet
-tortor gravida placerat. Integer sapien est, iaculis in, pretium quis, viverra
-ac, nunc. Praesent eget sem vel leo ultrices bibendum. Aenean faucibus.
-Morbi dolor nulla, malesuada eu, pulvinar at, mollis ac, nulla. Curabitur
-auctor semper nulla. Donec varius orci eget risus. Duis nibh mi, congue eu,
-accumsan eleifend, sagittis quis, diam. Duis eget orci sit amet orci dignissim
-rutrum.
-<!--l. 87--><p class="indent" >   Nam dui ligula, fringilla a, euismod sodales, sollicitudin vel, wisi. Morbi auctor
-lorem non justo. Nam lacus libero, pretium at, lobortis vitae, ultricies et,
-tellus. Donec aliquet, tortor sed accumsan bibendum, erat ligula aliquet
-
-magna, vitae ornare odio metus a mi. Morbi ac orci et nisl hendrerit mollis.
-Suspendisse ut massa. Cras nec ante. Pellentesque a nulla. Cum sociis natoque
-penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aliquam
-tincidunt urna. Nulla ullamcorper vestibulum turpis. Pellentesque cursus luctus
-mauris.
-<!--l. 89--><p class="noindent" >
-   <h3 class="sectionHead"><span class="titlemark">3.4   </span> <a 
- id="x1-150003.4"></a>Convection</h3>
-   <div class="sectionTOCS">
-   </div>
-<!--l. 90--><p class="indent" >   Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Ut purus elit,
-vestibulum ut, placerat ac, adipiscing vitae, felis. Curabitur dictum gravida mauris.
-Nam arcu libero, nonummy eget, consectetuer id, vulputate a, magna. Donec vehicula
-augue eu neque. Pellentesque habitant morbi tristique senectus et netus et malesuada
 fames ac turpis egestas. Mauris ut leo. Cras viverra metus rhoncus sem.
 Nulla et lectus vestibulum urna fringilla ultrices. Phasellus eu tellus sit amet
 tortor gravida placerat. Integer sapien est, iaculis in, pretium quis, viverra
@@ -422,37 +355,11 @@ penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aliquam
 tincidunt urna. Nulla ullamcorper vestibulum turpis. Pellentesque cursus luctus
 mauris.
 <!--l. 92--><p class="noindent" >
-   <h3 class="sectionHead"><span class="titlemark">3.5   </span> <a 
- id="x1-160003.5"></a>Ocean Circulation</h3>
+   <h3 class="sectionHead"><span class="titlemark">2.2   </span> <a 
+ id="x1-80002.2"></a>Charnock&#8217;s Relation</h3>
    <div class="sectionTOCS">
    </div>
-<!--l. 93--><p class="indent" >   Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Ut purus elit,
-vestibulum ut, placerat ac, adipiscing vitae, felis. Curabitur dictum gravida mauris.
-Nam arcu libero, nonummy eget, consectetuer id, vulputate a, magna. Donec vehicula
-augue eu neque. Pellentesque habitant morbi tristique senectus et netus et malesuada
-fames ac turpis egestas. Mauris ut leo. Cras viverra metus rhoncus sem.
-Nulla et lectus vestibulum urna fringilla ultrices. Phasellus eu tellus sit amet
-tortor gravida placerat. Integer sapien est, iaculis in, pretium quis, viverra
-
-ac, nunc. Praesent eget sem vel leo ultrices bibendum. Aenean faucibus.
-Morbi dolor nulla, malesuada eu, pulvinar at, mollis ac, nulla. Curabitur
-auctor semper nulla. Donec varius orci eget risus. Duis nibh mi, congue eu,
-accumsan eleifend, sagittis quis, diam. Duis eget orci sit amet orci dignissim
-rutrum.
-<!--l. 93--><p class="indent" >   Nam dui ligula, fringilla a, euismod sodales, sollicitudin vel, wisi. Morbi auctor
-lorem non justo. Nam lacus libero, pretium at, lobortis vitae, ultricies et,
-tellus. Donec aliquet, tortor sed accumsan bibendum, erat ligula aliquet
-magna, vitae ornare odio metus a mi. Morbi ac orci et nisl hendrerit mollis.
-Suspendisse ut massa. Cras nec ante. Pellentesque a nulla. Cum sociis natoque
-penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aliquam
-tincidunt urna. Nulla ullamcorper vestibulum turpis. Pellentesque cursus luctus
-mauris.
-<!--l. 95--><p class="noindent" >
-   <h3 class="sectionHead"><span class="titlemark">3.6   </span> <a 
- id="x1-170003.6"></a>CAPE</h3>
-   <div class="sectionTOCS">
-   </div>
-<!--l. 96--><p class="indent" >   Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Ut purus elit,
+<!--l. 94--><p class="indent" >   Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Ut purus elit,
 vestibulum ut, placerat ac, adipiscing vitae, felis. Curabitur dictum gravida mauris.
 Nam arcu libero, nonummy eget, consectetuer id, vulputate a, magna. Donec vehicula
 augue eu neque. Pellentesque habitant morbi tristique senectus et netus et malesuada
@@ -464,7 +371,35 @@ Morbi dolor nulla, malesuada eu, pulvinar at, mollis ac, nulla. Curabitur
 auctor semper nulla. Donec varius orci eget risus. Duis nibh mi, congue eu,
 accumsan eleifend, sagittis quis, diam. Duis eget orci sit amet orci dignissim
 rutrum.
-<!--l. 96--><p class="indent" >   Nam dui ligula, fringilla a, euismod sodales, sollicitudin vel, wisi. Morbi auctor
+<!--l. 94--><p class="indent" >   Nam dui ligula, fringilla a, euismod sodales, sollicitudin vel, wisi. Morbi auctor
+lorem non justo. Nam lacus libero, pretium at, lobortis vitae, ultricies et,
+tellus. Donec aliquet, tortor sed accumsan bibendum, erat ligula aliquet
+magna, vitae ornare odio metus a mi. Morbi ac orci et nisl hendrerit mollis.
+Suspendisse ut massa. Cras nec ante. Pellentesque a nulla. Cum sociis natoque
+                                                                  
+
+                                                                  
+penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aliquam
+tincidunt urna. Nulla ullamcorper vestibulum turpis. Pellentesque cursus luctus
+mauris.
+<!--l. 96--><p class="noindent" >
+   <h3 class="sectionHead"><span class="titlemark">2.3   </span> <a 
+ id="x1-90002.3"></a>Surface Roughness</h3>
+   <div class="sectionTOCS">
+   </div>
+<!--l. 98--><p class="indent" >   Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Ut purus elit,
+vestibulum ut, placerat ac, adipiscing vitae, felis. Curabitur dictum gravida mauris.
+Nam arcu libero, nonummy eget, consectetuer id, vulputate a, magna. Donec vehicula
+augue eu neque. Pellentesque habitant morbi tristique senectus et netus et malesuada
+fames ac turpis egestas. Mauris ut leo. Cras viverra metus rhoncus sem.
+Nulla et lectus vestibulum urna fringilla ultrices. Phasellus eu tellus sit amet
+tortor gravida placerat. Integer sapien est, iaculis in, pretium quis, viverra
+ac, nunc. Praesent eget sem vel leo ultrices bibendum. Aenean faucibus.
+Morbi dolor nulla, malesuada eu, pulvinar at, mollis ac, nulla. Curabitur
+auctor semper nulla. Donec varius orci eget risus. Duis nibh mi, congue eu,
+accumsan eleifend, sagittis quis, diam. Duis eget orci sit amet orci dignissim
+rutrum.
+<!--l. 98--><p class="indent" >   Nam dui ligula, fringilla a, euismod sodales, sollicitudin vel, wisi. Morbi auctor
 lorem non justo. Nam lacus libero, pretium at, lobortis vitae, ultricies et,
 tellus. Donec aliquet, tortor sed accumsan bibendum, erat ligula aliquet
 magna, vitae ornare odio metus a mi. Morbi ac orci et nisl hendrerit mollis.
@@ -472,27 +407,9 @@ Suspendisse ut massa. Cras nec ante. Pellentesque a nulla. Cum sociis natoque
 penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aliquam
 tincidunt urna. Nulla ullamcorper vestibulum turpis. Pellentesque cursus luctus
 mauris.
-
-   <h2 class="chapterHead"><span class="titlemark">Chapter&#x00A0;4</span><br /><a 
- id="x1-180004"></a>Mass Transfer</h2>
-   <div class="chapterTOCS">
-   &#x00A0;<span class="sectionToc" >4.1 <a 
-href="#x1-190004.1">Gas Transfer</a></span>
-<br />   &#x00A0;<span class="sectionToc" >4.2 <a 
-href="#x1-200004.2">Turbulence</a></span>
-<br />   &#x00A0;<span class="sectionToc" >4.3 <a 
-href="#x1-210004.3">Wave Breaking</a></span>
-   </div>
-<!--l. 99--><p class="indent" >   Suspendisse vitae elit. Aliquam arcu neque, ornare in, ullamcorper quis, commodo
-eu, libero. Fusce sagittis erat at erat tristique mollis. Maecenas sapien libero, molestie
-et, lobortis in, sodales eget, dui. Morbi ultrices rutrum lorem. Nam elementum
-ullamcorper leo. Morbi dui. Aliquam sagittis. Nunc placerat. Pellentesque tristique
-sodales est. Maecenas imperdiet lacinia velit. Cras non urna. Morbi eros
-pede, suscipit ac, varius vel, egestas non, eros. Praesent malesuada, diam id
-pretium elementum, eros sem dictum tortor, vel consectetuer odio sem sed
-wisi.
-   <h3 class="sectionHead"><span class="titlemark">4.1   </span> <a 
- id="x1-190004.1"></a>Gas Transfer</h3>
+<!--l. 100--><p class="noindent" >
+   <h3 class="sectionHead"><span class="titlemark">2.4   </span> <a 
+ id="x1-100002.4"></a>Dissipation</h3>
    <div class="sectionTOCS">
    </div>
 <!--l. 102--><p class="indent" >   Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Ut purus elit,
@@ -504,6 +421,9 @@ Nulla et lectus vestibulum urna fringilla ultrices. Phasellus eu tellus sit amet
 tortor gravida placerat. Integer sapien est, iaculis in, pretium quis, viverra
 ac, nunc. Praesent eget sem vel leo ultrices bibendum. Aenean faucibus.
 Morbi dolor nulla, malesuada eu, pulvinar at, mollis ac, nulla. Curabitur
+                                                                  
+
+                                                                  
 auctor semper nulla. Donec varius orci eget risus. Duis nibh mi, congue eu,
 accumsan eleifend, sagittis quis, diam. Duis eget orci sit amet orci dignissim
 rutrum.
@@ -516,12 +436,312 @@ penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aliquam
 tincidunt urna. Nulla ullamcorper vestibulum turpis. Pellentesque cursus luctus
 mauris.
 <!--l. 104--><p class="noindent" >
+   <h3 class="sectionHead"><span class="titlemark">2.5   </span> <a 
+ id="x1-110002.5"></a>Wind Waves</h3>
+   <div class="sectionTOCS">
+   </div>
+<!--l. 106--><p class="indent" >   Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Ut purus elit,
+vestibulum ut, placerat ac, adipiscing vitae, felis. Curabitur dictum gravida mauris.
+Nam arcu libero, nonummy eget, consectetuer id, vulputate a, magna. Donec vehicula
+augue eu neque. Pellentesque habitant morbi tristique senectus et netus et malesuada
+fames ac turpis egestas. Mauris ut leo. Cras viverra metus rhoncus sem.
+Nulla et lectus vestibulum urna fringilla ultrices. Phasellus eu tellus sit amet
+tortor gravida placerat. Integer sapien est, iaculis in, pretium quis, viverra
+ac, nunc. Praesent eget sem vel leo ultrices bibendum. Aenean faucibus.
+Morbi dolor nulla, malesuada eu, pulvinar at, mollis ac, nulla. Curabitur
+auctor semper nulla. Donec varius orci eget risus. Duis nibh mi, congue eu,
+accumsan eleifend, sagittis quis, diam. Duis eget orci sit amet orci dignissim
+rutrum.
+<!--l. 106--><p class="indent" >   Nam dui ligula, fringilla a, euismod sodales, sollicitudin vel, wisi. Morbi auctor
+lorem non justo. Nam lacus libero, pretium at, lobortis vitae, ultricies et,
+tellus. Donec aliquet, tortor sed accumsan bibendum, erat ligula aliquet
+magna, vitae ornare odio metus a mi. Morbi ac orci et nisl hendrerit mollis.
+Suspendisse ut massa. Cras nec ante. Pellentesque a nulla. Cum sociis natoque
+penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aliquam
+tincidunt urna. Nulla ullamcorper vestibulum turpis. Pellentesque cursus luctus
+mauris.
+<!--l. 108--><p class="noindent" >
+   <h3 class="sectionHead"><span class="titlemark">2.6   </span> <a 
+ id="x1-120002.6"></a>Wave Breaking</h3>
+   <div class="sectionTOCS">
+   </div>
+<!--l. 110--><p class="indent" >   Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Ut purus elit,
+                                                                  
+
+                                                                  
+vestibulum ut, placerat ac, adipiscing vitae, felis. Curabitur dictum gravida mauris.
+Nam arcu libero, nonummy eget, consectetuer id, vulputate a, magna. Donec vehicula
+augue eu neque. Pellentesque habitant morbi tristique senectus et netus et malesuada
+fames ac turpis egestas. Mauris ut leo. Cras viverra metus rhoncus sem.
+Nulla et lectus vestibulum urna fringilla ultrices. Phasellus eu tellus sit amet
+tortor gravida placerat. Integer sapien est, iaculis in, pretium quis, viverra
+ac, nunc. Praesent eget sem vel leo ultrices bibendum. Aenean faucibus.
+Morbi dolor nulla, malesuada eu, pulvinar at, mollis ac, nulla. Curabitur
+auctor semper nulla. Donec varius orci eget risus. Duis nibh mi, congue eu,
+accumsan eleifend, sagittis quis, diam. Duis eget orci sit amet orci dignissim
+rutrum.
+<!--l. 110--><p class="indent" >   Nam dui ligula, fringilla a, euismod sodales, sollicitudin vel, wisi. Morbi auctor
+lorem non justo. Nam lacus libero, pretium at, lobortis vitae, ultricies et,
+tellus. Donec aliquet, tortor sed accumsan bibendum, erat ligula aliquet
+magna, vitae ornare odio metus a mi. Morbi ac orci et nisl hendrerit mollis.
+Suspendisse ut massa. Cras nec ante. Pellentesque a nulla. Cum sociis natoque
+penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aliquam
+tincidunt urna. Nulla ullamcorper vestibulum turpis. Pellentesque cursus luctus
+mauris.
+                                                                  
+
+                                                                  
+   <h2 class="chapterHead"><span class="titlemark">Chapter&#x00A0;3</span><br /><a 
+ id="x1-130003"></a>Heat Transfer</h2>
+   <div class="chapterTOCS">
+   &#x00A0;<span class="sectionToc" >3.1 <a 
+href="#x1-140003.1">Sensible and Latent Heat Fluxes</a></span>
+<br />   &#x00A0;<span class="sectionToc" >3.2 <a 
+href="#x1-160003.2">Diffusion</a></span>
+<br />   &#x00A0;<span class="sectionToc" >3.3 <a 
+href="#x1-170003.3">Hot Towers</a></span>
+<br />   &#x00A0;<span class="sectionToc" >3.4 <a 
+href="#x1-190003.4">Convection</a></span>
+<br />   &#x00A0;<span class="sectionToc" >3.5 <a 
+href="#x1-200003.5">Ocean Circulation</a></span>
+<br />   &#x00A0;<span class="sectionToc" >3.6 <a 
+href="#x1-210003.6">CAPE</a></span>
+   </div>
+<!--l. 114--><p class="indent" >   Suspendisse vitae elit. Aliquam arcu neque, ornare in, ullamcorper quis, commodo
+eu, libero. Fusce sagittis erat at erat tristique mollis. Maecenas sapien libero, molestie
+et, lobortis in, sodales eget, dui. Morbi ultrices rutrum lorem. Nam elementum
+ullamcorper leo. Morbi dui. Aliquam sagittis. Nunc placerat. Pellentesque tristique
+sodales est. Maecenas imperdiet lacinia velit. Cras non urna. Morbi eros
+pede, suscipit ac, varius vel, egestas non, eros. Praesent malesuada, diam id
+pretium elementum, eros sem dictum tortor, vel consectetuer odio sem sed
+wisi.
+   <h3 class="sectionHead"><span class="titlemark">3.1   </span> <a 
+ id="x1-140003.1"></a>Sensible and Latent Heat Fluxes</h3>
+   <div class="sectionTOCS">
+   &#x00A0;&#x00A0;<span class="subsectionToc" >3.1.1 <a 
+href="#x1-150003.1.1" id="QQ2-1-15">Wind Induced Surface Heat Exchange (WISHE)</a></span>
+   </div>
+<!--l. 118--><p class="indent" >   Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Ut purus elit,
+vestibulum ut, placerat ac, adipiscing vitae, felis. Curabitur dictum gravida mauris.
+Nam arcu libero, nonummy eget, consectetuer id, vulputate a, magna. Donec vehicula
+augue eu neque. Pellentesque habitant morbi tristique senectus et netus et malesuada
+fames ac turpis egestas. Mauris ut leo. Cras viverra metus rhoncus sem.
+Nulla et lectus vestibulum urna fringilla ultrices. Phasellus eu tellus sit amet
+tortor gravida placerat. Integer sapien est, iaculis in, pretium quis, viverra
+ac, nunc. Praesent eget sem vel leo ultrices bibendum. Aenean faucibus.
+Morbi dolor nulla, malesuada eu, pulvinar at, mollis ac, nulla. Curabitur
+auctor semper nulla. Donec varius orci eget risus. Duis nibh mi, congue eu,
+accumsan eleifend, sagittis quis, diam. Duis eget orci sit amet orci dignissim
+rutrum.
+<!--l. 118--><p class="indent" >   Nam dui ligula, fringilla a, euismod sodales, sollicitudin vel, wisi. Morbi auctor
+lorem non justo. Nam lacus libero, pretium at, lobortis vitae, ultricies et,
+tellus. Donec aliquet, tortor sed accumsan bibendum, erat ligula aliquet
+magna, vitae ornare odio metus a mi. Morbi ac orci et nisl hendrerit mollis.
+Suspendisse ut massa. Cras nec ante. Pellentesque a nulla. Cum sociis natoque
+penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aliquam
+tincidunt urna. Nulla ullamcorper vestibulum turpis. Pellentesque cursus luctus
+mauris.
+                                                                  
+
+                                                                  
+<!--l. 120--><p class="noindent" >
+   <h4 class="subsectionHead"><span class="titlemark">3.1.1   </span> <a 
+ id="x1-150003.1.1"></a>Wind Induced Surface Heat Exchange (WISHE)</h4>
+<!--l. 123--><p class="noindent" >
+   <h3 class="sectionHead"><span class="titlemark">3.2   </span> <a 
+ id="x1-160003.2"></a>Diffusion</h3>
+   <div class="sectionTOCS">
+   </div>
+<!--l. 125--><p class="indent" >   Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Ut purus elit,
+vestibulum ut, placerat ac, adipiscing vitae, felis. Curabitur dictum gravida mauris.
+Nam arcu libero, nonummy eget, consectetuer id, vulputate a, magna. Donec vehicula
+augue eu neque. Pellentesque habitant morbi tristique senectus et netus et malesuada
+fames ac turpis egestas. Mauris ut leo. Cras viverra metus rhoncus sem.
+Nulla et lectus vestibulum urna fringilla ultrices. Phasellus eu tellus sit amet
+tortor gravida placerat. Integer sapien est, iaculis in, pretium quis, viverra
+ac, nunc. Praesent eget sem vel leo ultrices bibendum. Aenean faucibus.
+Morbi dolor nulla, malesuada eu, pulvinar at, mollis ac, nulla. Curabitur
+auctor semper nulla. Donec varius orci eget risus. Duis nibh mi, congue eu,
+accumsan eleifend, sagittis quis, diam. Duis eget orci sit amet orci dignissim
+rutrum.
+<!--l. 125--><p class="indent" >   Nam dui ligula, fringilla a, euismod sodales, sollicitudin vel, wisi. Morbi auctor
+lorem non justo. Nam lacus libero, pretium at, lobortis vitae, ultricies et,
+tellus. Donec aliquet, tortor sed accumsan bibendum, erat ligula aliquet
+magna, vitae ornare odio metus a mi. Morbi ac orci et nisl hendrerit mollis.
+Suspendisse ut massa. Cras nec ante. Pellentesque a nulla. Cum sociis natoque
+penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aliquam
+tincidunt urna. Nulla ullamcorper vestibulum turpis. Pellentesque cursus luctus
+mauris.
+<!--l. 127--><p class="noindent" >
+   <h3 class="sectionHead"><span class="titlemark">3.3   </span> <a 
+ id="x1-170003.3"></a>Hot Towers</h3>
+   <div class="sectionTOCS">
+   &#x00A0;&#x00A0;<span class="subsectionToc" >3.3.1 <a 
+href="#x1-180003.3.1" id="QQ2-1-18">Hurricanes</a></span>
+   </div>
+<!--l. 129--><p class="indent" >   Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Ut purus elit,
+vestibulum ut, placerat ac, adipiscing vitae, felis. Curabitur dictum gravida mauris.
+Nam arcu libero, nonummy eget, consectetuer id, vulputate a, magna. Donec vehicula
+augue eu neque. Pellentesque habitant morbi tristique senectus et netus et malesuada
+fames ac turpis egestas. Mauris ut leo. Cras viverra metus rhoncus sem.
+Nulla et lectus vestibulum urna fringilla ultrices. Phasellus eu tellus sit amet
+tortor gravida placerat. Integer sapien est, iaculis in, pretium quis, viverra
+ac, nunc. Praesent eget sem vel leo ultrices bibendum. Aenean faucibus.
+                                                                  
+
+                                                                  
+Morbi dolor nulla, malesuada eu, pulvinar at, mollis ac, nulla. Curabitur
+auctor semper nulla. Donec varius orci eget risus. Duis nibh mi, congue eu,
+accumsan eleifend, sagittis quis, diam. Duis eget orci sit amet orci dignissim
+rutrum.
+<!--l. 129--><p class="indent" >   Nam dui ligula, fringilla a, euismod sodales, sollicitudin vel, wisi. Morbi auctor
+lorem non justo. Nam lacus libero, pretium at, lobortis vitae, ultricies et,
+tellus. Donec aliquet, tortor sed accumsan bibendum, erat ligula aliquet
+magna, vitae ornare odio metus a mi. Morbi ac orci et nisl hendrerit mollis.
+Suspendisse ut massa. Cras nec ante. Pellentesque a nulla. Cum sociis natoque
+penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aliquam
+tincidunt urna. Nulla ullamcorper vestibulum turpis. Pellentesque cursus luctus
+mauris.
+<!--l. 131--><p class="noindent" >
+   <h4 class="subsectionHead"><span class="titlemark">3.3.1   </span> <a 
+ id="x1-180003.3.1"></a>Hurricanes</h4>
+<!--l. 134--><p class="noindent" >
+   <h3 class="sectionHead"><span class="titlemark">3.4   </span> <a 
+ id="x1-190003.4"></a>Convection</h3>
+   <div class="sectionTOCS">
+   </div>
+<!--l. 136--><p class="indent" >   Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Ut purus elit,
+vestibulum ut, placerat ac, adipiscing vitae, felis. Curabitur dictum gravida mauris.
+Nam arcu libero, nonummy eget, consectetuer id, vulputate a, magna. Donec vehicula
+augue eu neque. Pellentesque habitant morbi tristique senectus et netus et malesuada
+fames ac turpis egestas. Mauris ut leo. Cras viverra metus rhoncus sem.
+Nulla et lectus vestibulum urna fringilla ultrices. Phasellus eu tellus sit amet
+tortor gravida placerat. Integer sapien est, iaculis in, pretium quis, viverra
+ac, nunc. Praesent eget sem vel leo ultrices bibendum. Aenean faucibus.
+Morbi dolor nulla, malesuada eu, pulvinar at, mollis ac, nulla. Curabitur
+auctor semper nulla. Donec varius orci eget risus. Duis nibh mi, congue eu,
+accumsan eleifend, sagittis quis, diam. Duis eget orci sit amet orci dignissim
+rutrum.
+<!--l. 136--><p class="indent" >   Nam dui ligula, fringilla a, euismod sodales, sollicitudin vel, wisi. Morbi auctor
+lorem non justo. Nam lacus libero, pretium at, lobortis vitae, ultricies et,
+tellus. Donec aliquet, tortor sed accumsan bibendum, erat ligula aliquet
+magna, vitae ornare odio metus a mi. Morbi ac orci et nisl hendrerit mollis.
+Suspendisse ut massa. Cras nec ante. Pellentesque a nulla. Cum sociis natoque
+penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aliquam
+tincidunt urna. Nulla ullamcorper vestibulum turpis. Pellentesque cursus luctus
+mauris.
+                                                                  
+
+                                                                  
+<!--l. 138--><p class="noindent" >
+   <h3 class="sectionHead"><span class="titlemark">3.5   </span> <a 
+ id="x1-200003.5"></a>Ocean Circulation</h3>
+   <div class="sectionTOCS">
+   </div>
+<!--l. 140--><p class="indent" >   Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Ut purus elit,
+vestibulum ut, placerat ac, adipiscing vitae, felis. Curabitur dictum gravida mauris.
+Nam arcu libero, nonummy eget, consectetuer id, vulputate a, magna. Donec vehicula
+augue eu neque. Pellentesque habitant morbi tristique senectus et netus et malesuada
+fames ac turpis egestas. Mauris ut leo. Cras viverra metus rhoncus sem.
+Nulla et lectus vestibulum urna fringilla ultrices. Phasellus eu tellus sit amet
+tortor gravida placerat. Integer sapien est, iaculis in, pretium quis, viverra
+ac, nunc. Praesent eget sem vel leo ultrices bibendum. Aenean faucibus.
+Morbi dolor nulla, malesuada eu, pulvinar at, mollis ac, nulla. Curabitur
+auctor semper nulla. Donec varius orci eget risus. Duis nibh mi, congue eu,
+accumsan eleifend, sagittis quis, diam. Duis eget orci sit amet orci dignissim
+rutrum.
+<!--l. 140--><p class="indent" >   Nam dui ligula, fringilla a, euismod sodales, sollicitudin vel, wisi. Morbi auctor
+lorem non justo. Nam lacus libero, pretium at, lobortis vitae, ultricies et,
+tellus. Donec aliquet, tortor sed accumsan bibendum, erat ligula aliquet
+magna, vitae ornare odio metus a mi. Morbi ac orci et nisl hendrerit mollis.
+Suspendisse ut massa. Cras nec ante. Pellentesque a nulla. Cum sociis natoque
+penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aliquam
+tincidunt urna. Nulla ullamcorper vestibulum turpis. Pellentesque cursus luctus
+mauris.
+<!--l. 142--><p class="noindent" >
+   <h3 class="sectionHead"><span class="titlemark">3.6   </span> <a 
+ id="x1-210003.6"></a>CAPE</h3>
+   <div class="sectionTOCS">
+   </div>
+<!--l. 144--><p class="indent" >   Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Ut purus elit,
+vestibulum ut, placerat ac, adipiscing vitae, felis. Curabitur dictum gravida mauris.
+Nam arcu libero, nonummy eget, consectetuer id, vulputate a, magna. Donec vehicula
+augue eu neque. Pellentesque habitant morbi tristique senectus et netus et malesuada
+fames ac turpis egestas. Mauris ut leo. Cras viverra metus rhoncus sem.
+Nulla et lectus vestibulum urna fringilla ultrices. Phasellus eu tellus sit amet
+tortor gravida placerat. Integer sapien est, iaculis in, pretium quis, viverra
+ac, nunc. Praesent eget sem vel leo ultrices bibendum. Aenean faucibus.
+Morbi dolor nulla, malesuada eu, pulvinar at, mollis ac, nulla. Curabitur
+auctor semper nulla. Donec varius orci eget risus. Duis nibh mi, congue eu,
+accumsan eleifend, sagittis quis, diam. Duis eget orci sit amet orci dignissim
+rutrum.
+<!--l. 144--><p class="indent" >   Nam dui ligula, fringilla a, euismod sodales, sollicitudin vel, wisi. Morbi auctor
+lorem non justo. Nam lacus libero, pretium at, lobortis vitae, ultricies et,
+tellus. Donec aliquet, tortor sed accumsan bibendum, erat ligula aliquet
+                                                                  
+
+                                                                  
+magna, vitae ornare odio metus a mi. Morbi ac orci et nisl hendrerit mollis.
+Suspendisse ut massa. Cras nec ante. Pellentesque a nulla. Cum sociis natoque
+penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aliquam
+tincidunt urna. Nulla ullamcorper vestibulum turpis. Pellentesque cursus luctus
+mauris.
+                                                                  
+
+                                                                  
+   <h2 class="chapterHead"><span class="titlemark">Chapter&#x00A0;4</span><br /><a 
+ id="x1-220004"></a>Mass Transfer</h2>
+   <div class="chapterTOCS">
+   &#x00A0;<span class="sectionToc" >4.1 <a 
+href="#x1-230004.1">Gas Transfer</a></span>
+<br />   &#x00A0;<span class="sectionToc" >4.2 <a 
+href="#x1-240004.2">Aerosols</a></span>
+<br />   &#x00A0;<span class="sectionToc" >4.3 <a 
+href="#x1-250004.3">Turbulence</a></span>
+<br />   &#x00A0;<span class="sectionToc" >4.4 <a 
+href="#x1-260004.4">Wave Breaking</a></span>
+   </div>
+<!--l. 148--><p class="indent" >   Suspendisse vitae elit. Aliquam arcu neque, ornare in, ullamcorper quis, commodo
+eu, libero. Fusce sagittis erat at erat tristique mollis. Maecenas sapien libero, molestie
+et, lobortis in, sodales eget, dui. Morbi ultrices rutrum lorem. Nam elementum
+ullamcorper leo. Morbi dui. Aliquam sagittis. Nunc placerat. Pellentesque tristique
+sodales est. Maecenas imperdiet lacinia velit. Cras non urna. Morbi eros
+pede, suscipit ac, varius vel, egestas non, eros. Praesent malesuada, diam id
+pretium elementum, eros sem dictum tortor, vel consectetuer odio sem sed
+wisi.
+   <h3 class="sectionHead"><span class="titlemark">4.1   </span> <a 
+ id="x1-230004.1"></a>Gas Transfer</h3>
+   <div class="sectionTOCS">
+   </div>
+<!--l. 152--><p class="indent" >   Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Ut purus elit,
+vestibulum ut, placerat ac, adipiscing vitae, felis. Curabitur dictum gravida mauris.
+Nam arcu libero, nonummy eget, consectetuer id, vulputate a, magna. Donec vehicula
+augue eu neque. Pellentesque habitant morbi tristique senectus et netus et malesuada
+fames ac turpis egestas. Mauris ut leo. Cras viverra metus rhoncus sem.
+Nulla et lectus vestibulum urna fringilla ultrices. Phasellus eu tellus sit amet
+tortor gravida placerat. Integer sapien est, iaculis in, pretium quis, viverra
+ac, nunc. Praesent eget sem vel leo ultrices bibendum. Aenean faucibus.
+Morbi dolor nulla, malesuada eu, pulvinar at, mollis ac, nulla. Curabitur
+auctor semper nulla. Donec varius orci eget risus. Duis nibh mi, congue eu,
+accumsan eleifend, sagittis quis, diam. Duis eget orci sit amet orci dignissim
+rutrum.
+<!--l. 152--><p class="indent" >   Nam dui ligula, fringilla a, euismod sodales, sollicitudin vel, wisi. Morbi auctor
+lorem non justo. Nam lacus libero, pretium at, lobortis vitae, ultricies et,
+tellus. Donec aliquet, tortor sed accumsan bibendum, erat ligula aliquet
+magna, vitae ornare odio metus a mi. Morbi ac orci et nisl hendrerit mollis.
+Suspendisse ut massa. Cras nec ante. Pellentesque a nulla. Cum sociis natoque
+penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aliquam
+tincidunt urna. Nulla ullamcorper vestibulum turpis. Pellentesque cursus luctus
+mauris.
+<!--l. 154--><p class="noindent" >
    <h3 class="sectionHead"><span class="titlemark">4.2   </span> <a 
- id="x1-200004.2"></a>Turbulence</h3>
-   <div class="sectionTOCS">
+ id="x1-240004.2"></a>Aerosols</h3>
+                                                                  
 
+                                                                  
+   <div class="sectionTOCS">
    </div>
-<!--l. 105--><p class="indent" >   Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Ut purus elit,
+<!--l. 156--><p class="indent" >   Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Ut purus elit,
 vestibulum ut, placerat ac, adipiscing vitae, felis. Curabitur dictum gravida mauris.
 Nam arcu libero, nonummy eget, consectetuer id, vulputate a, magna. Donec vehicula
 augue eu neque. Pellentesque habitant morbi tristique senectus et netus et malesuada
@@ -533,7 +753,7 @@ Morbi dolor nulla, malesuada eu, pulvinar at, mollis ac, nulla. Curabitur
 auctor semper nulla. Donec varius orci eget risus. Duis nibh mi, congue eu,
 accumsan eleifend, sagittis quis, diam. Duis eget orci sit amet orci dignissim
 rutrum.
-<!--l. 105--><p class="indent" >   Nam dui ligula, fringilla a, euismod sodales, sollicitudin vel, wisi. Morbi auctor
+<!--l. 156--><p class="indent" >   Nam dui ligula, fringilla a, euismod sodales, sollicitudin vel, wisi. Morbi auctor
 lorem non justo. Nam lacus libero, pretium at, lobortis vitae, ultricies et,
 tellus. Donec aliquet, tortor sed accumsan bibendum, erat ligula aliquet
 magna, vitae ornare odio metus a mi. Morbi ac orci et nisl hendrerit mollis.
@@ -541,12 +761,12 @@ Suspendisse ut massa. Cras nec ante. Pellentesque a nulla. Cum sociis natoque
 penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aliquam
 tincidunt urna. Nulla ullamcorper vestibulum turpis. Pellentesque cursus luctus
 mauris.
-<!--l. 107--><p class="noindent" >
+<!--l. 158--><p class="noindent" >
    <h3 class="sectionHead"><span class="titlemark">4.3   </span> <a 
- id="x1-210004.3"></a>Wave Breaking</h3>
+ id="x1-250004.3"></a>Turbulence</h3>
    <div class="sectionTOCS">
    </div>
-<!--l. 108--><p class="indent" >   Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Ut purus elit,
+<!--l. 160--><p class="indent" >   Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Ut purus elit,
 vestibulum ut, placerat ac, adipiscing vitae, felis. Curabitur dictum gravida mauris.
 Nam arcu libero, nonummy eget, consectetuer id, vulputate a, magna. Donec vehicula
 augue eu neque. Pellentesque habitant morbi tristique senectus et netus et malesuada
@@ -558,35 +778,92 @@ Morbi dolor nulla, malesuada eu, pulvinar at, mollis ac, nulla. Curabitur
 auctor semper nulla. Donec varius orci eget risus. Duis nibh mi, congue eu,
 accumsan eleifend, sagittis quis, diam. Duis eget orci sit amet orci dignissim
 rutrum.
-<!--l. 108--><p class="indent" >   Nam dui ligula, fringilla a, euismod sodales, sollicitudin vel, wisi. Morbi auctor
+<!--l. 160--><p class="indent" >   Nam dui ligula, fringilla a, euismod sodales, sollicitudin vel, wisi. Morbi auctor
 lorem non justo. Nam lacus libero, pretium at, lobortis vitae, ultricies et,
 tellus. Donec aliquet, tortor sed accumsan bibendum, erat ligula aliquet
 magna, vitae ornare odio metus a mi. Morbi ac orci et nisl hendrerit mollis.
 Suspendisse ut massa. Cras nec ante. Pellentesque a nulla. Cum sociis natoque
+                                                                  
 
+                                                                  
 penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aliquam
 tincidunt urna. Nulla ullamcorper vestibulum turpis. Pellentesque cursus luctus
 mauris.
+<!--l. 162--><p class="noindent" >
+   <h3 class="sectionHead"><span class="titlemark">4.4   </span> <a 
+ id="x1-260004.4"></a>Wave Breaking</h3>
+   <div class="sectionTOCS">
+   </div>
+<!--l. 164--><p class="indent" >   Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Ut purus elit,
+vestibulum ut, placerat ac, adipiscing vitae, felis. Curabitur dictum gravida mauris.
+Nam arcu libero, nonummy eget, consectetuer id, vulputate a, magna. Donec vehicula
+augue eu neque. Pellentesque habitant morbi tristique senectus et netus et malesuada
+fames ac turpis egestas. Mauris ut leo. Cras viverra metus rhoncus sem.
+Nulla et lectus vestibulum urna fringilla ultrices. Phasellus eu tellus sit amet
+tortor gravida placerat. Integer sapien est, iaculis in, pretium quis, viverra
+ac, nunc. Praesent eget sem vel leo ultrices bibendum. Aenean faucibus.
+Morbi dolor nulla, malesuada eu, pulvinar at, mollis ac, nulla. Curabitur
+auctor semper nulla. Donec varius orci eget risus. Duis nibh mi, congue eu,
+accumsan eleifend, sagittis quis, diam. Duis eget orci sit amet orci dignissim
+rutrum.
+<!--l. 164--><p class="indent" >   Nam dui ligula, fringilla a, euismod sodales, sollicitudin vel, wisi. Morbi auctor
+lorem non justo. Nam lacus libero, pretium at, lobortis vitae, ultricies et,
+tellus. Donec aliquet, tortor sed accumsan bibendum, erat ligula aliquet
+magna, vitae ornare odio metus a mi. Morbi ac orci et nisl hendrerit mollis.
+Suspendisse ut massa. Cras nec ante. Pellentesque a nulla. Cum sociis natoque
+penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aliquam
+tincidunt urna. Nulla ullamcorper vestibulum turpis. Pellentesque cursus luctus
+mauris.
+                                                                  
 
+                                                                  
    <h2 class="chapterHead"><span class="titlemark">Chapter&#x00A0;5</span><br /><a 
- id="x1-220005"></a>References</h2>
+ id="x1-270005"></a>References</h2>
    <div class="chapterTOCS">
    </div>
+                                                                  
 
+                                                                  
    <h2 class="likechapterHead"><a 
- id="x1-230005"></a>Bibliography</h2>
+ id="x1-280005"></a>Bibliography</h2>
   <div class="thebibliography">
   <p class="bibitem" ><span class="biblabel">
 <a 
- id="Xbenjamin67"></a><span class="bibsp">&#x00A0;&#x00A0;&#x00A0;</span></span>Benjamin, T.&#x00A0;B. (1967). Gravity Currents and Related Phenomena, <span 
-class="cmti-10">Journal</span>
+ id="Xbatchelor00"></a><span class="bibsp">&#x00A0;&#x00A0;&#x00A0;</span></span>Batchelor, G.&#x00A0;K. (2000).  <span 
+class="cmti-10">An Introduction to Fluid Dynamics</span>, Cambridge
+  Mathematical Library, Cambridge: University Press.
+  </p>
+  <p class="bibitem" ><span class="biblabel">
+<a 
+ id="Xbertrand78"></a><span class="bibsp">&#x00A0;&#x00A0;&#x00A0;</span></span>Bertrand, J. (1878). Sur L&#8217;Homogénéité dans les Formules de Physique,
   <span 
-class="cmti-10">of Fluid Mechanics </span><span 
-class="cmbx-10">31</span>(2):&#x00A0;209&#8211;248.
+class="cmti-10">Comptes Rendus </span><span 
+class="cmbx-10">86</span>(15):&#x00A0;916&#8211;920.
+  </p>
+  <p class="bibitem" ><span class="biblabel">
+<a 
+ id="Xbuckingham14"></a><span class="bibsp">&#x00A0;&#x00A0;&#x00A0;</span></span>Buckingham, E. (1914). On Physically Similar Systems; Illustrations of the
+  Use of Dimensional Equations, <span 
+class="cmti-10">Physical Review </span><span 
+class="cmbx-10">4</span>(4):&#x00A0;345&#8211;376.
+  </p>
+  <p class="bibitem" ><span class="biblabel">
+<a 
+ id="Xcsanady04"></a><span class="bibsp">&#x00A0;&#x00A0;&#x00A0;</span></span>Csanady, G. (2004). <span 
+class="cmti-10">Air-Sea Interaction: Laws and Mechanisms</span>, Cambridge:
+  University Press.
+  </p>
+  <p class="bibitem" ><span class="biblabel">
+<a 
+ id="Xrayleigh92"></a><span class="bibsp">&#x00A0;&#x00A0;&#x00A0;</span></span>Rayleigh, J. (1892). On the Question of the Stability of the Flow of Liquids,
+  <span 
+class="cmti-10">Philosophical Magazine </span><span 
+class="cmbx-10">34</span>:&#x00A0;59&#8211;70.
 </p>
   </div>
     
 </body> 
 </html>
+                                                                  
 
 

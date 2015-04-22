@@ -3,6 +3,7 @@
   \setcounter{secnumdepth}{4} 
   \usepackage{lipsum}
   \usepackage[round]{natbib}
+\usepackage{hyperref}
   \usepackage{titletoc}
   \begin{document}
   
@@ -26,7 +27,7 @@
   
   %---------------------
   \chapter{Introduction and Definitions} 
-\label{intro}
+
   \ifdefined\HCode
   \else
   {
@@ -34,8 +35,7 @@
   \printcontents[chapter]{}{1}{\setcounter{tocdepth}{1}} 
   }
   \fi
-    \lipsum[10]
-
+    
   
   %---------------------
    
@@ -49,9 +49,35 @@
   \stopcontents[chapter]
   } 
   \fi
-  
- Air-Sea interactions on various scales have 
-  \chapter{Momentum Transfer}
+ \subsection{Introduction} 
+\label{intro}
+ Air-Sea interactions on various scales have important impacts on various atmospheric and oceanic processes, such as \hyperref[hurricanes]{hurricanes}, \hyperref[circulation]{ocean circulation}, large scale atmospheric motions and monsoon cycles.
+There are three main quantities transferred between atmosphere and ocean, namely  \hyperref[momentumtransfer]{momentum}, \hyperref[heattransfer]{heat} and \hyperref[masstransfer]{mass}.
+The laws governing these transfers are generally implicit relationships between the flux of a quantity, the related forces in the flow, and various properties of the system.
+This implicit relationship is represented in \citet{csanady04} by the equation
+\begin{equation}
+f\left(\mbox{Flux},\mbox{Force},\sum^n_{i=1} X_i \right) =0,
+\label{eq:fluxforce}
+\end{equation}
+for $n$ variables $X_i$ that influence the transfer.
+This \hyperref[eq:fluxforce]{relationship} can be reworked with knowledge of the \hyperref[def:buckingham]{Buckingham $\pi$ Theorem} to give
+\begin{equation}
+f\left(\sum^m_{i=1} N_i \right) =0,
+\label{eq:fluxforce2}
+\end{equation}
+for $m$ nondimensional combinations of the force, flux and variables.
+If the flux or force appears in one $N_i$ only, then this relationship can be used by setting this as the response variable, with all others set as explanatory variables.
+Variations on \hyperref[eq:fluxforce2]{this equation} will be used in later sections to describe the mechanics of various local and \hyperref[def:bulk]{bulk} transfers.
+\section{Definitions}
+\label{definitions}
+\begin{description}
+\item[Buckingham $\pi$ Theorem] First proved by \citeauthor{bertrand78} in \citeyear{bertrand78}, and expanded on by \citet{rayleigh92} and \citet{buckingham14}, this theorem states that if some physical process is described by $n$ variables, of which $k$ are repeating (generally linear dimensions, density and velocity in fluid dynamics), then there exists $n-k$ non-dimensional, independent parameters that can be used to describe the process, in some combination.\label{def:buckingham}
+\item[Laminar Flow] If a fluid flows purely in parallel layers, with no mixing between, then it is known as laminar flow \citep{batchelor00}.\label{def:laminar}
+\item[Turbulent Flow] The opposite of \hyperref[def:laminar]{laminar flow}, turbulent flow typically is chaotic, with rapid pressure and velocity changes in time and space \citep{batchelor00}.\label{def:turbulent}
+\item[Bulk Transfer] Generally in air-sea interactions, there is transfer of momentum/heat/etc both from air to sea and from sea to air. The inclusion of \hyperref[def:boundarylayer]{boundary layers} further complicates the use of local descriptions of this transfer. To this end, we generally formulate laws in terms of the difference in a quantity across the boundary layer, and the flux across the air/sea interface \citep{csanady04}. \label{def:bulk}
+\end{description}
+
+\chapter{Momentum Transfer}
 \label{momentumtransfer}
     \lipsum[10]
   
@@ -90,6 +116,9 @@
     \section{Sensible and Latent Heat Fluxes}
 \label{heatflux}
     \lipsum[1-2]
+
+\subsection{Wind Induced Surface Heat Exchange (WISHE)}
+\label{wishe}
    
     \section{Diffusion}
 \label{diffusion}
@@ -98,6 +127,9 @@
     \section{Hot Towers}
 \label{hottowers}
     \lipsum[1-2]
+
+\subsection{Hurricanes}
+\label{hurricanes}
 
     \section{Convection}
 \label{convection}
