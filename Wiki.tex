@@ -1,0 +1,113 @@
+\documentclass{report}
+  \setcounter{tocdepth}{0}
+  \setcounter{secnumdepth}{4} 
+  \usepackage{lipsum}
+  \usepackage[round]{natbib}
+  \usepackage{titletoc}
+  \begin{document}
+  
+  \title{Air-Sea Interactions\\SOEE5680M Wiki Project} 
+  \author{Kieran Newman\\200901399}
+  \date{\small\today}
+  \maketitle
+  
+  %tell tex4ht to make main toc show only chapters 
+  %thanks to Radhakrishnan CV for this solution
+  \ifdefined\HCode
+  \Configure{tableofcontents*}{chapter} 
+  \fi
+  
+  \tableofcontents
+  
+  \ifdefined\HCode
+  \TocAt{chapter,section} %show section only in chapters TOC 
+  \TocAt{section,subsection} %show subsection only in sections TOC
+  \fi
+  
+  %---------------------
+  \chapter{Definitions} 
+  \ifdefined\HCode
+  \else
+  {
+  \startcontents[chapter]
+  \printcontents[chapter]{}{1}{\setcounter{tocdepth}{1}} 
+  }
+  \fi
+    \lipsum[10]
+
+\citep{benjamin67}    
+  %---------------------
+   
+  \ifdefined\HCode
+  \PauseCutAt{section}
+  \fi
+  
+  \ifdefined\HCode
+  \else
+  {
+  \stopcontents[chapter]
+  } 
+  \fi
+  
+  
+  \chapter{Momentum Transfer}
+    \lipsum[10]
+  
+    \section{Surface Layers}
+    \lipsum[1-2]
+
+   \subsection{Turbulence} 
+    \lipsum[1-2]
+
+    \section{Charnock's Relation}
+    \lipsum[1-2]
+  
+    \section{Surface Roughness}
+    \lipsum[1-2]
+
+    \section{Dissipation}
+    \lipsum[1-2]  	
+
+    \section{Wind Waves}
+    \lipsum[1-2]
+
+    \section{Wave Breaking}
+    \lipsum[1-2]
+
+\chapter{Heat Transfer}
+    \lipsum[10]
+  
+    \section{Sensible and Latent Heat Fluxes}
+    \lipsum[1-2]
+   
+    \section{Diffusion}
+    \lipsum[1-2]
+
+    \section{Hot Towers}
+    \lipsum[1-2]
+
+    \section{Convection}
+    \lipsum[1-2]
+
+    \section{Ocean Circulation}
+    \lipsum[1-2]
+
+    \section{CAPE}
+    \lipsum[1-2]
+
+\chapter{Mass Transfer}
+    \lipsum[10]
+  
+    \section{Gas Transfer}
+    \lipsum[1-2]
+   
+    \section{Turbulence}
+    \lipsum[1-2]
+  
+    \section{Wave Breaking}
+    \lipsum[1-2]
+
+\chapter{References}
+\bibliographystyle{dcu}
+\bibliography{kwnrefs}
+  \end{document}
