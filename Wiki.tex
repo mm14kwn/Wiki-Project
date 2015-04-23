@@ -5,6 +5,29 @@
   \usepackage[round]{natbib}
 \usepackage{hyperref}
   \usepackage{titletoc}
+\usepackage{bm}
+\usepackage{amsmath}
+\usepackage{amsthm}
+\usepackage{datetime}
+\newcommand{\rhob}{\bar{\rho}}
+\newcommand{\srho}{\rhob + (\rho(\bm{x},t) -\rhob)}
+\newcommand{\srhos}{\rhob + (\rho -\rhob)}
+\newcommand{\DD}[2]{\frac{D#1}{D#2}}
+\newcommand{\Dt}[1]{\DD{#1}{t}}
+\newcommand{\vel}{\bm{u}}
+\newcommand{\grav}{\bm{g}}
+\newcommand{\del}{\nabla}
+\newcommand{\deldot}{\nabla \cdot}
+\newcommand{\delcross}{\nabla \times}
+\newcommand{\inv}[1]{\frac{1}{#1}}
+\newcommand{\bO}{\bm{\Omega}}
+\newcommand{\bo}{\bm{\omega}}
+\newcommand{\qv}{\bm{q}}
+\newcommand{\delh}{\nabla_h}
+\newcommand{\DDh}[2]{\frac{D_h#1}{D#2}}
+\newcommand{\Dth}[1]{\DDh{#1}{t}}
+\newcommand{\Dthexp}[1]{\partial_t {#1} + u \partial_x {#1} + v \partial_y {#1}}
+\newcommand{\io}{\iota}
   \begin{document}
   
   \title{Air-Sea Interactions\\SOEE5680M Wiki Project} 
@@ -49,9 +72,9 @@
   \stopcontents[chapter]
   } 
   \fi
- \subsection{Introduction} 
+ \section{Introduction} 
 \label{intro}
- Air-Sea interactions on various scales have important impacts on various atmospheric and oceanic processes, such as \hyperref[hurricanes]{hurricanes}, \hyperref[circulation]{ocean circulation}, large scale atmospheric motions and monsoon cycles.
+Air-Sea interactions on various scales have important impacts on various atmospheric and oceanic processes, such as \hyperref[hurricanes]{hurricanes}, \hyperref[circulation]{ocean circulation}, large scale atmospheric motions and monsoon cycles.
 There are three main quantities transferred between atmosphere and ocean, namely  \hyperref[momentumtransfer]{momentum}, \hyperref[heattransfer]{heat} and \hyperref[masstransfer]{mass}.
 The laws governing these transfers are generally implicit relationships between the flux of a quantity, the related forces in the flow, and various properties of the system.
 This implicit relationship is represented in \citet{csanady04} by the equation
@@ -60,27 +83,113 @@ f\left(\mbox{Flux},\mbox{Force},\sum^n_{i=1} X_i \right) =0,
 \label{eq:fluxforce}
 \end{equation}
 for $n$ variables $X_i$ that influence the transfer.
-This \hyperref[eq:fluxforce]{relationship} can be reworked with knowledge of the \hyperref[def:buckingham]{Buckingham $\pi$ Theorem} to give
+This \hyperref[eq:fluxforce]{relationship} can be reworked with knowledge of the \hyperref[buckingham]{Buckingham $\pi$ Theorem} to give
 \begin{equation}
 f\left(\sum^m_{i=1} N_i \right) =0,
 \label{eq:fluxforce2}
 \end{equation}
 for $m$ nondimensional combinations of the force, flux and variables.
 If the flux or force appears in one $N_i$ only, then this relationship can be used by setting this as the response variable, with all others set as explanatory variables.
-Variations on \hyperref[eq:fluxforce2]{this equation} will be used in later sections to describe the mechanics of various local and \hyperref[def:bulk]{bulk} transfers.
+Variations on \hyperref[eq:fluxforce2]{this equation} will be used in later sections to describe the mechanics of various local and \hyperref[bulk]{bulk} transfers.
+
+\section{Notation}\label{notation}
+Various differing notations are used throughout various literature for differentials operators and vectors in particular. In the interests of clarity, in this wiki, the first partial derivative is represented by
+\begin{equation}
+\label{eq:1partial}
+\frac{\partial}{\partial t} = \partial _t,
+\end{equation}
+and the second by
+\begin{align}
+\label{eq:doublepartial}
+\frac{\partial^2}{\partial t^2} &:= \partial^2_{tt},\\
+\label{eq:mixedpartial}
+\frac{\partial^2}{\partial x\partial y} &:= \partial^2_{xy}
+\end{align}for double and mixed derivatives respectively. Vectors are denoted in bold type, i.e. by
+\begin{equation}
+\label{eq:vector}
+\bm{a}=\left(\begin{array}{c} a_1\\\vdots\\a_n \end{array}\right).
+\end{equation}
+Velocity is notated in three dimensional cartesian coordinates as
+\begin{equation}
+\label{eq:veloc}
+\vel=\left(\begin{array}{c} u_x\\u_y\\u_z \end{array}\right),
+\end{equation}
+density as $\rho$, and pressure as $P$. $(\lambda,\phi)$ is used for latitude and longitude.
 \section{Definitions}
 \label{definitions}
 \begin{description}
-\item[Buckingham $\pi$ Theorem] First proved by \citeauthor{bertrand78} in \citeyear{bertrand78}, and expanded on by \citet{rayleigh92} and \citet{buckingham14}, this theorem states that if some physical process is described by $n$ variables, of which $k$ are repeating (generally linear dimensions, density and velocity in fluid dynamics), then there exists $n-k$ non-dimensional, independent parameters that can be used to describe the process, in some combination.\label{def:buckingham}
-\item[Laminar Flow] If a fluid flows purely in parallel layers, with no mixing between, then it is known as laminar flow \citep{batchelor00}.\label{def:laminar}
-\item[Turbulent Flow] The opposite of \hyperref[def:laminar]{laminar flow}, turbulent flow typically is chaotic, with rapid pressure and velocity changes in time and space \citep{batchelor00}.\label{def:turbulent}
-\item[Bulk Transfer] Generally in air-sea interactions, there is transfer of momentum/heat/etc both from air to sea and from sea to air. The inclusion of \hyperref[def:boundarylayer]{boundary layers} further complicates the use of local descriptions of this transfer. To this end, we generally formulate laws in terms of the difference in a quantity across the boundary layer, and the flux across the air/sea interface \citep{csanady04}. \label{def:bulk}
+\item[Buckingham $\pi$ Theorem] First proved by \citeauthor{bertrand78} in \citeyear{bertrand78}, and expanded on by \citet{rayleigh92} and \citet{buckingham14}, this theorem states that if some physical process is described by $n$ variables, of which $k$ are repeating (generally linear dimensions, density and velocity in fluid dynamics), then there exists $n-k$ non-dimensional, independent parameters that can be used to describe the process, in some combination.\label{buckingham}
+
+\item[Laminar Flow] If a fluid flows purely in parallel layers, with no mixing between, then it is known as laminar flow \citep{batchelor00}.\label{laminar}
+
+\item[Turbulent Flow] The opposite of \hyperref[laminar]{laminar flow}, turbulent flow typically is chaotic, with rapid pressure and velocity changes in time and space \citep{batchelor00}.\label{turbulent}
+
+\item[Bulk Transfer] Generally in air-sea interactions, there is transfer of momentum/heat/etc both from air to sea and from sea to air.
+The inclusion of \hyperref[def:boundarylayer]{boundary layers} further complicates the use of local descriptions of this transfer.
+To this end, we generally formulate laws in terms of the difference in a quantity across the boundary layer, and the flux across the air/sea interface \citep{csanady04}. \label{bulk}
+
+\item[Shear Stress] Stress is a measure of the force acting on some body or fluid parcel per unit area.
+Shear stress is the component of the stress that is parallel to the surface.
+In \hyperref[def:isotropic]{isotropic}, \hyperref[def:newtonian]{Newtonian} fluids, the shear stress is linearly related to the rate of strain on the fluid parcel \citep{schlichting79}.
+Stress is usually represented as a tensor $\bm{\tau}$.\label{def:shearstress}
+
+\item[Isotropy] If a fluid's properties are uniform in all directions, it is isotropic.\label{def:isotropic}
+
+\item[Newtonian Fluid] Newtonian fluids are those in which the viscous stress is linearly related to the strain rate.\label{def:newtonian}
+
+\item[Boundary Layers]
+The majority of transfer processes affect only the atmospheric boundary layer, a comparitively thin section of the atmosphere close to the boundary between sea and air.\label{def:boundarylayer}
+
+\item[Navier-Stokes Equations]
+Named after Claude-Louis Navier and George Gabriel Stokes, these equations describe the motion of fluids.
+For incompressible flows, they can be expressed
+\begin{equation}
+\rho (\partial_t \vel + \vel \cdot \del \vel) = -\del P + \mu \del^2 \vel,
+\label{eq:navierstokes}
+\end{equation}
+where $\vel$ is velocity, $P$ is pressure, $\rho$ is density and $\mu$ is viscosity.
+\label{def:navierstokes}
 \end{description}
 
-\chapter{Momentum Transfer}
-\label{momentumtransfer}
-    \lipsum[10]
-  
+\chapter{Momentum Transfer}\label{momentumtransfer}
+We consider first a simplified case of an infinite domain, with viscous, laminar flow and a free air-sea interface at $z=0$. 
+This simple case is an extension to flow near an impulsively moved wall, as explored in \citet{harlen14c6}.
+In the initial state, both fluids are at rest, then at time $t=0$, the air instanteneously starts moving with constant velocity $\vel=\bm{U}$ in the $x$-$y$ plane.
+For simplicity, we assume this movement is entirely in the $x$-direction.
+Viscosity, working as a diffusion of momentum, causes a negative acceleration on the air while applying a positive acceleration on the water.
+The   \hyperref[def:shearstress]{shear stress}   $\bm{\tau}$ applied by this movement is given by
+\begin{equation}
+\bm{\tau} = \mu \partial_z u_x =\mu \partial_z U_x,
+\label{eq:shearstress}
+\end{equation}
+where $\mu$ is the viscosity of the fluid.
+Differentiating \ref{eq:shearstress} with respect to $z$, we obtain
+\begin{equation}
+\partial_z \tau =\mu \partial^2_{zz} u.
+\label{eq:diffshearstress}
+\end{equation}
+If we notice that we have an incompressible fluid with flow solely in the $x$-direction (and independent of $x$ and $y$), then the \hyperref[def:navierstokes]{Navier-Stokes Equations} (\ref{eq:navierstokes}) reduce to
+\begin{equation}
+\rho \partial_t u_x = \mu \partial^2_{zz} u_x.
+\label{eq:reducedns}
+\end{equation}
+\ref{eq:reducedns} is a \hyperref[diffusion]{diffusion} equation, and can be combined with \ref{eq:diffshearstress} to give
+\begin{equation}
+\rho\partial_t u_x = \partial_z \tau.
+\label{eq:fluxmom}
+\end{equation}
+The shear stress can thus be thought of as a flux of horizontal momentum \citep{csanady04}.
+If \ref{eq:fluxmom} is multiplied by $u_x$, we obtain
+\begin{align}
+u_x \rho \partial_t u_x &= \partial_z \tau,\\
+\Rightarrow \frac{\rho}{2} \partial_t u_x^2 &= u\partial_z \tau. 
+\end{align}
+It can be seen that the left hand side of this equation is the rate of change of kinetic energy.
+The right hand side can be rewritten using \ref{eq:diffshearstress} to give:
+\begin{equation}
+\frac{\rho}{2} \partial_t u_x^2 = \partial_z \left( \frac{\mu}{2} \partial_t u_x^2 \right) -\mu (\partial_z u_x)^2.
+\end{equation}
+This equation is a conservation law for kinetic energy, the rate of change of kinetic energy (LHS) is equal to the energy flux (1st term, RHS) minus the energy lost from the kinetic system through transformation to heat (2nd term, RHS), i.e. the entropy source \citep{csanady04}.
     \section{Surface Layers}
 \label{surfacelayers}
     \lipsum[1-2]
@@ -166,4 +275,5 @@ Variations on \hyperref[eq:fluxforce2]{this equation} will be used in later sect
 \chapter{References}
 \bibliographystyle{dcu}
 \bibliography{kwnrefs}
+Compiled from \LaTeX using tex4ht at \currenttime, \today.
   \end{document}
